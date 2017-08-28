@@ -1,0 +1,23 @@
+#
+# com.acme.prime.eval.application COMMAND
+#
+
+Bundle-Version:					1.0.0.${tstamp}
+Bundle-Description: A sample 'command' application for the Base Tutorial
+
+Private-Package:  \
+	com.acme.prime.eval.application.command
+
+-includeresource: {readme.md}
+
+-buildpath: \
+	osgi.enroute.base.api;version=2.1,\
+	com.acme.prime.api;version=latest
+
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12, \
+	osgi.enroute.hamcrest.wrapper;version=1.3
+
+
+-runbundles: org.apache.felix.log;version='[1.0.1,1.0.2)'
+Export-Package: com.acme.prime.eval.application.command

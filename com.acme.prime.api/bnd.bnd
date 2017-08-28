@@ -1,0 +1,21 @@
+#
+# com.acme.prime.api DEFAULTS
+#
+
+Bundle-Version:					1.0.0.${tstamp}
+Bundle-Description: Exmpla enRoute API project that forms part of the Base Tutorial
+
+Export-Package: com.acme.prime.eval.api
+
+Require-Capability: \
+	compile-only
+
+-includeresource: {readme.md}
+
+-buildpath:  \
+	osgi.enroute.base.api;version=2.1
+
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12, \
+	osgi.enroute.hamcrest.wrapper;version=1.3
+

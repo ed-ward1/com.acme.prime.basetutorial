@@ -1,0 +1,43 @@
+#
+#  OSGi TEST BUNDLE
+#
+
+Bundle-Version:1.0.0.${tstamp}
+Bundle-Description: \
+ 	This bundle is an OSGi test bundle that tests the enRoute Blog Manager API. Projects\
+ 	that provide this API should configure their bnd.bnd file to run this test so that\
+ 	the providers can test their conformance. This bundle requires DSTest to run so this\
+ 	bundle should be included. \
+	\
+	${warning;Please update this Bundle-Description in com.acme.prime.eval.test/bnd.bnd}
+
+
+Private-Package:  \
+	com.acme.prime.eval.test
+
+Test-Cases: ${test-cases}
+
+
+-includeresource: {readme.md}
+
+-buildpath: \
+	osgi.enroute.base.api;version=2.1,\
+	com.acme.prime.api;version=latest
+
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12, \
+	osgi.enroute.hamcrest.wrapper;version=1.3
+
+
+-runrequires: osgi.identity;filter:='(osgi.identity=com.acme.prime.eval.test)'
+
+-runbundles: \
+	com.acme.prime.eval.provider;version=snapshot,\
+	com.acme.prime.eval.test;version=snapshot,\
+	org.apache.felix.configadmin;version='[1.8.8,1.8.9)',\
+	org.apache.felix.log;version='[1.0.1,1.0.2)',\
+	org.apache.felix.scr;version='[2.0.2,2.0.3)',\
+	org.eclipse.equinox.metatype;version='[1.4.100,1.4.101)',\
+	org.osgi.service.metatype;version='[1.3.0,1.3.1)',\
+	osgi.enroute.hamcrest.wrapper;version='[1.3.0,1.3.1)',\
+	osgi.enroute.junit.wrapper;version='[4.12.0,4.12.1)'

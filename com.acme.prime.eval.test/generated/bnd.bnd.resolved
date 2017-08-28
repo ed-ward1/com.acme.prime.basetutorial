@@ -1,0 +1,9 @@
+osgi.enroute.junit.wrapper;version='[4.12.0,4.12.1)';resolution=file:/home/ed/.m2/repository/org/osgi/osgi.enroute.junit.wrapper/4.12.0/osgi.enroute.junit.wrapper-4.12.0.jar
+com.acme.prime.eval.provider;version=snapshot;resolution=file:/home/ed/git/com.acme.prime.basetutorial/com.acme.prime.eval.provider/generated/com.acme.prime.eval.provider.jar
+org.apache.felix.log;version='[1.0.1,1.0.2)';resolution=file:/home/ed/.m2/repository/org/apache/felix/org.apache.felix.log/1.0.1/org.apache.felix.log-1.0.1.jar
+osgi.enroute.hamcrest.wrapper;version='[1.3.0,1.3.1)';resolution=file:/home/ed/.m2/repository/org/osgi/osgi.enroute.hamcrest.wrapper/1.3.0/osgi.enroute.hamcrest.wrapper-1.3.0.jar
+org.apache.felix.configadmin;version='[1.8.8,1.8.9)';resolution=file:/home/ed/.m2/repository/org/apache/felix/org.apache.felix.configadmin/1.8.8/org.apache.felix.configadmin-1.8.8.jar
+com.acme.prime.eval.test;version=snapshot;resolution=file:/home/ed/git/com.acme.prime.basetutorial/com.acme.prime.eval.test/generated/com.acme.prime.eval.test.jar
+org.eclipse.equinox.metatype;version='[1.4.100,1.4.101)';resolution=file:/home/ed/.m2/repository/org/osgi/org.eclipse.equinox.metatype/1.4.100.v20150408-1437/org.eclipse.equinox.metatype-1.4.100.v20150408-1437.jar
+org.apache.felix.scr;version='[2.0.2,2.0.3)';resolution=file:/home/ed/.m2/repository/org/apache/felix/org.apache.felix.scr/2.0.2/org.apache.felix.scr-2.0.2.jar
+org.osgi.service.metatype;version='[1.3.0,1.3.1)';resolution=file:/home/ed/.m2/repository/org/osgi/org.osgi.service.metatype/1.3.0/org.osgi.service.metatype-1.3.0.jar
