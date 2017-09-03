@@ -10,6 +10,7 @@ import com.acme.prime.eval.api.Eval;
 
 import osgi.enroute.debug.api.Debug;
 import parsii.eval.Parser;
+import parsii.tokenizer.ParseException;
 
 @Designate(ocd = EvalImpl.Config.class, factory = true)
 @Component(
@@ -37,8 +38,11 @@ public class EvalImpl implements Eval {
 	}
 
 	@Override
-	public double eval(String expression) throws Exception {
-		return Parser.parse(expression).evaluate();
+	public double eval(String expression) {
+		try {
+			return Parser.parse(expression).evaluate();
+		} catch (ParseException e) {
+			throw new RuntimeException(e);
+		}
 	}
-
 }
